@@ -51,21 +51,23 @@ import { BackgroundGeolocation, BackgroundGeolocationConfig } from '@ionic-nativ
 reverseLocation(){
  let coord1
 
-  this.nativeGeocoder.forwardGeocode("destination")
-    .then((coordinates: NativeGeocoderForwardResult) => coord1 = coordinates
+  this.nativeGeocoder.forwardGeocode(this.destination)
+    .then((coordinates: NativeGeocoderForwardResult) => coord1 = coordinates)
     .catch((error: any) => console.log(error));
     return coord1
 
-
 }
   setGeofence(value: number) {
-    let temp = this.destination.split(",")
+    let location = this.reverseLocation()
+
+    // this.reverseLocation();
     this.geolocation.getCurrentPosition({
       enableHighAccuracy: true
     }).then((resp) => {
-      var longitude = temp[1];
-      var latitude = temp[0]
+      var longitude= location.longitude;
+      var latitude = location.latitude;
       var radius = value;
+
 
       let fence = {
           id: "myGeofenceID1",
