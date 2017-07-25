@@ -37,6 +37,7 @@ import { BackgroundGeolocation, BackgroundGeolocationConfig } from '@ionic-nativ
      this.destination = navParams.get('destination')
     this.miles = "One Mile"
 
+
      this.platform.ready().then(() => {
 
       Geofence.initialize().then(
@@ -47,6 +48,16 @@ import { BackgroundGeolocation, BackgroundGeolocationConfig } from '@ionic-nativ
     });
   }
 
+reverseLocation(){
+ let coord1
+
+  this.nativeGeocoder.forwardGeocode("destination")
+    .then((coordinates: NativeGeocoderForwardResult) => coord1 = coordinates
+    .catch((error: any) => console.log(error));
+    return coord1
+
+
+}
   setGeofence(value: number) {
     let temp = this.destination.split(",")
     this.geolocation.getCurrentPosition({
