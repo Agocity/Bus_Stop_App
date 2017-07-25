@@ -5,6 +5,7 @@ import { Geolocation } from '@ionic-native/geolocation';
 import { Geofence, SMS} from 'ionic-native';
 import { Vibration } from '@ionic-native/vibration';
 import { ActivePage } from '../active/active';
+import { NativeGeocoder, NativeGeocoderReverseResult, NativeGeocoderForwardResult } from '@ionic-native/native-geocoder';
 // import { LocationTracker } from '../../providers/location-tracker/location-tracker';
 import { BackgroundGeolocation, BackgroundGeolocationConfig } from '@ionic-native/background-geolocation';
 
@@ -30,7 +31,11 @@ import { BackgroundGeolocation, BackgroundGeolocationConfig } from '@ionic-nativ
    destination: any;
    miles: any;
 
-   constructor(private backgroundGeolocation: BackgroundGeolocation, private vibration: Vibration, private alertCtrl: AlertController, public navCtrl: NavController, public navParams: NavParams, private platform: Platform, private geolocation: Geolocation) {
+   constructor(private backgroundGeolocation: BackgroundGeolocation, private vibration: Vibration, private alertCtrl: AlertController, public alerCtrl: AlertController,
+     public navCtrl: NavController, public navParams: NavParams, private platform: Platform, private geolocation: Geolocation,
+     private nativeGeocoder: NativeGeocoder) {
+     this.destination = navParams.get('destination')
+    this.miles = "One Mile"
 
      this.platform.ready().then(() => {
 
@@ -43,12 +48,12 @@ import { BackgroundGeolocation, BackgroundGeolocationConfig } from '@ionic-nativ
   }
 
   setGeofence(value: number) {
-
+    let temp = this.destination.split(",")
     this.geolocation.getCurrentPosition({
       enableHighAccuracy: true
     }).then((resp) => {
-      var longitude = -118.295311;
-      var latitude = 34.017542
+      var longitude = temp[1];
+      var latitude = temp[0]
       var radius = value;
 
       let fence = {
@@ -56,7 +61,14 @@ import { BackgroundGeolocation, BackgroundGeolocationConfig } from '@ionic-nativ
           latitude:       latitude,
           longitude:      longitude,
           radius:         radius,
-          transitionType: 1
+          transitionType: 1,
+          notification: { //notification settings
+       id:             1, //any unique ID
+       title:          'ALERT', //notification title
+       text:           '!!YOU ARE IN NEAR PROXIMITY OF YOUR STOP!!', //notification body
+       openAppOnClick: true ,
+       vibration:      [1000, 5000, 2000]
+   }
         }
 
         Geofence.addOrUpdate(fence).then(
@@ -64,12 +76,11 @@ import { BackgroundGeolocation, BackgroundGeolocationConfig } from '@ionic-nativ
           (err) => this.error = "Failed to add or update the fence."
         );
 
-        Geofence.onTransitionReceived().subscribe(resp => {
-          this.vibration.vibrate(3000)
-       SMS.send('3239897826', 'Your stop is in close proximity!!!');
-     });
+    //     Geofence.onTransitionReceived().subscribe(resp => {
+    //       this.vibration.vibrate(3000)
+    //    SMS.send('3239897826', 'Your stop is in close proximity!!!');
+    //  });
 
-     this.navCtrl.push(ActivePage);
 
 
     }).catch((error) => {
@@ -81,6 +92,14 @@ import { BackgroundGeolocation, BackgroundGeolocationConfig } from '@ionic-nativ
      this.miles = "One Mile"
 
    }
+   doAlert() {
+  let alert = this.alerCtrl.create({
+    title: 'New Friend!',
+    message: 'Your friend, Obi wan Kenobi, just approved your friend request!',
+    buttons: ['Ok']
+  });
+  alert.present()
+}
 
   //  start(){
   //   this.locationTracker.startTracking();
@@ -91,51 +110,9 @@ import { BackgroundGeolocation, BackgroundGeolocationConfig } from '@ionic-nativ
   // }
 
 
-   checkdistance() {
-   let lat1;
-   let lon1;
-   let temp = this.destination.split(",")
-   let lat2 = temp[0];
-   let lon2 = temp[1];
-     this.geolocation.getCurrentPosition().then((resp) => {
-
-   lat1= resp.coords.latitude;
-   lon1 = resp.coords.longitude;
-
-   }).catch((error) => {
-   console.log('Error getting location', error);
-   });
-
-     if (this.getDistance(lat1,lon1,lat2,lon2)<= 1.60934){
-       this.vibration.vibrate(10000)
-
-     }
-     else{
-       console.log(lat2)
-     }
 
 
 
-
-
-   }
-   getDistance(lat1,lon1,lat2,lon2) {
-   let R = 6371; // Radius of the earth in km
-   let dLat = this.deg2rad(lat2-lat1);
-   let dLon = this.deg2rad(lon2-lon1);
-   let a =
-     Math.sin(dLat/2) * Math.sin(dLat/2) +
-     Math.cos(this.deg2rad(lat1)) * Math.cos(this.deg2rad(lat2)) *
-     Math.sin(dLon/2) * Math.sin(dLon/2)
-     ;
-   let c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-   let d = R * c;
-   return d;
-  }
-
-  deg2rad(deg) {
-   return deg * (Math.PI/180)
-  }
 
    showConfirm() {
      let confirm = this.alertCtrl.create({

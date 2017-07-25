@@ -71,24 +71,17 @@ export class HomePage {
 
 
     checkdistance() {
-    let lat1;
-    let lon1;
     let temp = this.destination.split(",")
     let lat2 = temp[0];
     let lon2 = temp[1];
       this.geolocation.getCurrentPosition().then((resp) => {
 
-    lat1= resp.coords.latitude;
-    lon1 = resp.coords.longitude;
 
     }).catch((error) => {
     console.log('Error getting location', error);
     });
 
-      if (this.getDistance(lat1,lon1,lat2,lon2)<= 1.60934){
-        this.vibration.vibrate(10000)
-
-      }
+    
 
 
 
