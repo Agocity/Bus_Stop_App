@@ -17,6 +17,7 @@ import { Vibration } from '@ionic-native/vibration';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { BackgroundGeolocation, BackgroundGeolocationConfig } from '@ionic-native/background-geolocation';
+import { NativeGeocoder, NativeGeocoderReverseResult, NativeGeocoderForwardResult } from '@ionic-native/native-geocoder';
 
 
 @NgModule({
@@ -49,6 +50,9 @@ import { BackgroundGeolocation, BackgroundGeolocationConfig } from '@ionic-nativ
     Vibration,
     BackgroundGeolocation,
     Geolocation,
+    NativeGeocoder,
+
+
     {provide: ErrorHandler, useClass: IonicErrorHandler}
 
   ]
