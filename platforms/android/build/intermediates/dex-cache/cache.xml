@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/exploded-aar/com.android.support/support-media-compat/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-26.0.0-alpha1_22e031c83533b502ecf288c4fe9578c36332eb3d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Gio/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/139535a69a4239db087de9bab0bee568bf8e0b70/slf4j-api-1.7.21.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="139535a69a4239db087de9bab0bee568bf8e0b70">
+        <dex dex="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/pre-dexed/debug/slf4j-api-1.7.21_652a8204ed58d8de4928cdb9024229173b8ef1ac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2a2d9cd43adbe7599a78f2293273a77881c1909a">
+        <dex dex="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-11.0.2_e549a6568b64bbd46dcad65425c9888ae977c7e5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Gio/IonicProjects/Test2/platforms/android/libs/gson-2.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
+        <dex dex="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/pre-dexed/debug/gson-2.3_e5d7772ab5bb1adc67c8d63f2296aca56d9483d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/exploded-aar/com.android.support/support-core-utils/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-26.0.0-alpha1_4386468a362b9080bbf136c02414f880be38a6f3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/exploded-aar/com.android.support/support-compat/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-compat-26.0.0-alpha1_ad2d031fa2acb9bc63487e9f353d0b2b2117c171.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-v4-26.0.0-alpha1_f73493b9a22c3eaf1d44849831ece3001e7fbecb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/exploded-aar/com.android.support/support-core-ui/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-26.0.0-alpha1_2ed8c15167973c0f2aeb9d3c8642934ea51b82e1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Gio/.gradle/caches/modules-2/files-2.1/com.github.tony19/apktool-lib/1.4.4-3/1d0125bf578cb30dd192496db56c2d937495248a/apktool-lib-1.4.4-3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="1d0125bf578cb30dd192496db56c2d937495248a">
+        <dex dex="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/pre-dexed/debug/apktool-lib-1.4.4-3_686e75937ccc98e48ea1b0f92f51ad4143c53a46.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/exploded-aar/org.apache.cordova/CordovaLib/6.2.2/debug/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="ac69c400df25fb7649fed8be1a6ddd5c60adc76d">
+        <dex dex="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-6.2.2-debug_c414b34eae72d1298593501d8d5641e17d19cc69.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/exploded-aar/com.android.support/support-fragment/26.0.0-alpha1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-26.0.0-alpha1_c3164012bdc1e9c9c6a709b4103a8e75f16030f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Gio/.gradle/caches/modules-2/files-2.1/com.github.tony19/logback-android-core/1.1.1-6/93117015ae639e6482e4e1ad5f988c3f61d09fe0/logback-android-core-1.1.1-6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="93117015ae639e6482e4e1ad5f988c3f61d09fe0">
+        <dex dex="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/pre-dexed/debug/logback-android-core-1.1.1-6_d18682c158be18a6e8bec6923d90ab1196b8dbb8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/11.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="240e5a7c620376184f3168cfdd36315b97b1fe07">
+        <dex dex="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-11.0.2_9b74c14d52c892d1f0eb3889f67f6b1b2c2d19f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a71be5f29a1c1e3fd3e84472742668f101a5b936">
+        <dex dex="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-11.0.2_9dd0ff464e0eb785c3d00687c1303ebf0bff9c7c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Gio/.gradle/caches/modules-2/files-2.1/com.github.tony19/logback-android-classic/1.1.1-6/614c66c9ece69eef48c65a8558de4fd7266d9f69/logback-android-classic-1.1.1-6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="614c66c9ece69eef48c65a8558de4fd7266d9f69">
+        <dex dex="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/pre-dexed/debug/logback-android-classic-1.1.1-6_4d3fc262f5086a16fc9d4bac1e5f25b6a39e7dd9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Gio/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/pre-dexed/debug/support-annotations-26.0.0-alpha1_eae5a877457e84016022b19c1736774e2db52be1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/11.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="db939a450ea2a721db84e774bf108e20c44a8a1d">
+        <dex dex="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-11.0.2_4f012c1b97d5637ecbb6ae742763607e8eeb8216.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/11.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="86baa7d1051901fc1b8e7f596732f71f32175bde">
+        <dex dex="/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-11.0.2_7ccc0996a977e3931726a30a66e718753da616bd.jar" />
+    </item>
+
+</items>

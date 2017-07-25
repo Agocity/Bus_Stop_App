@@ -1,0 +1,19 @@
+{
+    "CoreLocation.framework": 4,
+    "Accelerate.framework": 1,
+    "CoreData.framework": 1,
+    "CoreText.framework": 1,
+    "GLKit.framework": 1,
+    "ImageIO.framework": 1,
+    "libc++.dylib": 1,
+    "libz.dylib": 1,
+    "OpenGLES.framework": 1,
+    "QuartzCore.framework": 1,
+    "SystemConfiguration.framework": 2,
+    "UIKit.framework": 1,
+    "AudioToolbox.framework": 2,
+    "AVFoundation.framework": 1,
+    "libsqlite3.dylib": 2,
+    "WebKit.framework": 1,
+    "MessageUI.framework": 1
+}

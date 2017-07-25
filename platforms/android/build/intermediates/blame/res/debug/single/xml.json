@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/res/merged/debug/xml/authenticator.xml",
+        "source": "/Users/Gio/IonicProjects/Test2/platforms/android/res/xml/authenticator.xml"
+    },
+    {
+        "merged": "/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/res/merged/debug/xml/config.xml",
+        "source": "/Users/Gio/IonicProjects/Test2/platforms/android/res/xml/config.xml"
+    },
+    {
+        "merged": "/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/res/merged/debug/xml/syncadapter.xml",
+        "source": "/Users/Gio/IonicProjects/Test2/platforms/android/res/xml/syncadapter.xml"
+    }
+]

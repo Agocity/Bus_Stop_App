@@ -34,14 +34,29 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
+primary:    #0AFDA4,
+secondary:  #578F7A,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  green:      #cee6be,
+  main:       #ebdf7b,
+  good:       #4DC68F
 );
 
+$searchbar-md-input-background-color: #f4f4f4;
+$searchbar-md-input-border-radius: 24px;
+$searchbar-md-input-text-color:          #787878 !default;
+$searchbar-md-input-placeholder-color: #f4f4f4;
+$searchbar-md-input-search-icon-color: #787878;
+$searchbar-md-input-placeholder-color: #c1c1c1;
+$tabs-md-tab-icon-size:                3.7rem;
 
+// $searchbar-md-padding-end: 0px;
+// $searchbar-md-padding-top: 0px;
+// $searchbar-md-padding-bottom: 0px;
+// $searchbar-md-input-height: 3.4em;
+// $searchbar-md-input-search-icon-size: 30px;
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here

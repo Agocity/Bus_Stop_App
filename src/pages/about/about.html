@@ -1,11 +1,39 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
+  <ion-navbar color ="good">
+    <ion-title style= "text-align: center;">
+      Setting
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content style= "background-color: #f4f4f4 !important;" padding>
+
+    <ion-item color= "light">
+      <ion-label>Notifications</ion-label>
+      <ion-toggle color= "good" value="notif" checked="true"></ion-toggle>
+    </ion-item>
+
+    <br/><ion-item color= "light" large>
+      <ion-label>Vibration</ion-label>
+      <ion-toggle color= "good" value="vib" checked="true"></ion-toggle>
+    </ion-item>
+
+    <br/><ion-item color= "light">
+      <ion-label>Ringtone</ion-label>
+      <ion-toggle color= "good" value="vib" checked="true"></ion-toggle>
+    </ion-item>
+
+   <br/><ion-item color ="light">
+  <ion-range color= "good" [(ngModel)]="volume">
+    <ion-icon range-left name="md-volume-mute"></ion-icon>
+    <ion-icon range-right name="md-volume-up"></ion-icon>
+  </ion-range>
+   </ion-item>
+
+   <br/><ion-buttons large>
+     <button color ="good" ion-button (click)="vibrate()" block>Vibrate Test</button>
+   </ion-buttons>
+
+
 
 </ion-content>

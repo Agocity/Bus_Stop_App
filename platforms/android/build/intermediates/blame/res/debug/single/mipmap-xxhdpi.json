@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/Users/Gio/IonicProjects/Test2/platforms/android/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/Gio/IonicProjects/Test2/platforms/android/build/intermediates/res/merged/debug/mipmap-xxhdpi/icon.png",
+        "source": "/Users/Gio/IonicProjects/Test2/platforms/android/res/mipmap-xxhdpi/icon.png"
+    }
+]

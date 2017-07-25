@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/Gio/IonicProjects/Test2/platforms/android/libs"><file name="gson-2.3.jar" path="/Users/Gio/IonicProjects/Test2/platforms/android/libs/gson-2.3.jar"/></source></dataSet><dataSet config="debug"><source path="/Users/Gio/IonicProjects/Test2/platforms/android/src/debug/jniLibs"/></dataSet></merger>
