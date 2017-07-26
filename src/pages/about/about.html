@@ -1,26 +1,22 @@
 <ion-header>
-  <ion-navbar color ="good">
+  <ion-navbar hideBackButton color ="good">
     <ion-title style= "text-align: center;">
-      Setting
+     Setting
     </ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content style= "background-color: #f4f4f4 !important;" padding>
 
-    <ion-item color= "light">
+    <ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;" large>
       <ion-label>Notifications</ion-label>
-      <ion-toggle color= "good" value="notif" checked="true"></ion-toggle>
     </ion-item>
 
-    <br/><ion-item color= "light" large>
+    <br/><ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;" large>
       <ion-label>Vibration</ion-label>
-      <ion-toggle color= "good" value="vib" checked="true"></ion-toggle>
     </ion-item>
 
-    <br/><ion-item color= "light">
+    <br/><ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;" large>
       <ion-label>Ringtone</ion-label>
-      <ion-toggle color= "good" value="vib" checked="true"></ion-toggle>
     </ion-item>
 
    <br/><ion-item color ="light">
@@ -36,6 +32,10 @@
    <button ion-button (click)="home()" id="click1"  color="good" ><img src= "assets/images/search2.png" style= "width: 30px; height: 30px;"> </button>
 
    <button ion-button (click)="setting()" id="click2" color="good"><img src= "assets/images/setting2.png" style= "width: 30px; height: 30px;"></button>
+   <img src= "assets/images/group.png" style= "width: 80px;" id="button1">
+   <img src= "assets/images/group.png" style= "width: 80px;" id="button2">
+   <img src= "assets/images/group.png" style= "width: 80px;" id="button3">
+
 
 
 </ion-content>

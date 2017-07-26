@@ -51,8 +51,7 @@ export class HomePage {
           'controls': {
             'compass': true,
             'myLocationButton': true,
-            'indoorPicker': true,
-            'zoom': true
+            'indoorPicker': true
           },
           'gestures': {
             'scroll': true,

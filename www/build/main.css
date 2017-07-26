@@ -20642,16 +20642,16 @@ ion-searchbar {
 }
 
 .searchbar-md .searchbar-input::-moz-placeholder {
-  color: #939393;
+  color: #7c7c7c;
 }
 
 .searchbar-md .searchbar-input:-ms-input-placeholder {
-  color: #939393;
+  color: #7c7c7c;
 }
 
 .searchbar-md .searchbar-input::-webkit-input-placeholder {
   text-indent: 0;
-  color: #939393;
+  color: #7c7c7c;
 }
 
 .searchbar-md .searchbar-clear-icon {
@@ -35970,6 +35970,24 @@ ion-navbar.toolbar {
   left: 2%;
 }
 
+#button1 {
+  position: absolute;
+  top: 6%;
+  right: 5%;
+}
+
+#button2 {
+  position: absolute;
+  top: 17%;
+  right: 5%;
+}
+
+#button3 {
+  position: absolute;
+  top: 28.5%;
+  right: 5%;
+}
+
 #search {
   top: .2%;
 }
@@ -35992,7 +36010,7 @@ ion-app._gmaps_cdv_ .nav-decor {
 
 #search {
   position: absolute;
-  top: .2%;
+  top: .3%;
 }
 
 #click2 {
