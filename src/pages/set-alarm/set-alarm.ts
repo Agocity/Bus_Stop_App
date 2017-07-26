@@ -30,6 +30,7 @@ import { BackgroundGeolocation, BackgroundGeolocationConfig } from '@ionic-nativ
    success:any;
    destination: any;
    miles: any;
+   coord1: any;
 
    constructor(private backgroundGeolocation: BackgroundGeolocation, private vibration: Vibration, private alertCtrl: AlertController, public alerCtrl: AlertController,
      public navCtrl: NavController, public navParams: NavParams, private platform: Platform, private geolocation: Geolocation,
@@ -49,16 +50,21 @@ import { BackgroundGeolocation, BackgroundGeolocationConfig } from '@ionic-nativ
   }
 
 reverseLocation(){
- let coord1
 
   this.nativeGeocoder.forwardGeocode(this.destination)
-    .then((coordinates: NativeGeocoderForwardResult) => coord1 = coordinates)
+    .then((coordinates: NativeGeocoderForwardResult) => this.setGeofence(this.radius, coordinates))
     .catch((error: any) => console.log(error));
-    return coord1
+
+
+
 
 }
-  setGeofence(value: number) {
-    let location = this.reverseLocation()
+  setGeofence(value: number, coordinates) {
+    console.log("hi")
+    let location = coordinates
+    console.log(location.longitude)
+
+
 
     // this.reverseLocation();
     this.geolocation.getCurrentPosition({
