@@ -7,24 +7,23 @@
 </ion-header>
 <ion-content style= "background-color: #f4f4f4 !important;" padding>
 
-    <ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;" large>
-      <ion-label>Notifications</ion-label>
+    <ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;  padding: 0px 0px 20px 0px;" large>
+      <ion-label color= "grey" style= "font-size: 26px;"><b>Notifications</b></ion-label>
     </ion-item>
 
-    <br/><ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;" large>
-      <ion-label>Vibration</ion-label>
+    <ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;  padding: 20px 0px 20px 0px;" large>
+      <ion-label color= "grey" style= "font-size: 26px;"><b>Vibration</b><br/></ion-label>
+    </ion-item>
+    <br/>
+
+    <ion-item  style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;  padding: 10px 0px 20px 0px;" large>
+      <ion-label color= "grey" style= "font-size: 26px;"><b>Volume</b><br/></ion-label>
+      <ion-range color= "good" [(ngModel)]="volume">
+        <ion-icon color= "grey" range-left name=""></ion-icon>
+        <ion-icon color= "grey" range-right name=""></ion-icon>
+      </ion-range>
     </ion-item>
 
-    <br/><ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;" large>
-      <ion-label>Ringtone</ion-label>
-    </ion-item>
-
-   <br/><ion-item color ="light">
-  <ion-range color= "good" [(ngModel)]="volume">
-    <ion-icon color= "grey" range-left name="md-volume-mute"></ion-icon>
-    <ion-icon color= "grey" range-right name="md-volume-up"></ion-icon>
-  </ion-range>
-   </ion-item>
 
    <br/><ion-buttons large>
      <button color ="good" ion-button (click)="vibrate()" block>Vibrate Test</button>

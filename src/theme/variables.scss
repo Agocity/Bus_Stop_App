@@ -45,12 +45,13 @@ secondary:  #578F7A,
   grey:       #8c8c8c
 );
 
-$searchbar-md-input-background-color: #ffffff;
-$searchbar-md-input-border-radius: 4px;
-$searchbar-md-input-text-color:          #787878 !default;
+$searchbar-md-input-background-color:  #ffffff;
+$searchbar-md-input-border-radius:     4px;
+$searchbar-md-input-text-color:        #787878 !default;
 $searchbar-md-input-placeholder-color: #7c7c7c;
 $searchbar-md-input-search-icon-color: #ffffff;
 $tabs-md-tab-icon-size:                3.7rem;
+$range-md-hit-width:                   23px;
 // $searchbar-md-padding-end: 0px;
 // $searchbar-md-padding-top: 0px;
 // $searchbar-md-padding-bottom: 0px;
