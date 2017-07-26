@@ -4,7 +4,23 @@ page-home {
 ion-app._gmaps_cdv_ .nav-decor{
   background-color: transparent !important;
 }
-$searchbar-ios-input-text-color: #F00;// ion-searchbar {
+#click1 {
+    position: absolute;
+    top: 90%;
+    left: 2%;
+  }
+
+  #search {
+      position: absolute;
+      top: .2%;
+    }
+
+  #click2 {
+      position: absolute;
+      top: 90%;
+      right: 2%;
+    }
+// ion-searchbar {
 //     background-color: green;
 // }
 // ion-content {

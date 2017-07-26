@@ -30,132 +30,14 @@ webpackEmptyAsyncContext.id = 186;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__about_about__ = __webpack_require__(231);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(232);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(233);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var TabsPage = (function () {
-    function TabsPage() {
-        this.tab1Root = __WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */];
-        this.tab2Root = __WEBPACK_IMPORTED_MODULE_1__about_about__["a" /* AboutPage */];
-        this.tab3Root = __WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPage */];
-    }
-    return TabsPage;
-}());
-TabsPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/tabs/tabs.html"*/'<ion-tabs color="good">\n  <ion-tab [root]="tab1Root" tabTitle="" tabIcon="md-search" placeholder="bye"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="" tabIcon="md-settings"></ion-tab>\n\n</ion-tabs>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/tabs/tabs.html"*/
-    }),
-    __metadata("design:paramtypes", [])
-], TabsPage);
-
-//# sourceMappingURL=tabs.js.map
-
-/***/ }),
-
-/***/ 231:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__ = __webpack_require__(52);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var AboutPage = (function () {
-    function AboutPage(geolocation, vibration, navCtrl) {
-        this.geolocation = geolocation;
-        this.vibration = vibration;
-        this.navCtrl = navCtrl;
-    }
-    AboutPage.prototype.vibrate = function () {
-        this.vibration.vibrate(3000);
-    };
-    return AboutPage;
-}());
-AboutPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-about',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar color ="good">\n    <ion-title style= "text-align: center;">\n      Setting\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content style= "background-color: #f4f4f4 !important;" padding>\n\n    <ion-item color= "light">\n      <ion-label>Notifications</ion-label>\n      <ion-toggle color= "good" value="notif" checked="true"></ion-toggle>\n    </ion-item>\n\n    <br/><ion-item color= "light" large>\n      <ion-label>Vibration</ion-label>\n      <ion-toggle color= "good" value="vib" checked="true"></ion-toggle>\n    </ion-item>\n\n    <br/><ion-item color= "light">\n      <ion-label>Ringtone</ion-label>\n      <ion-toggle color= "good" value="vib" checked="true"></ion-toggle>\n    </ion-item>\n\n   <br/><ion-item color ="light">\n  <ion-range color= "good" [(ngModel)]="volume">\n    <ion-icon color= "grey" range-left name="md-volume-mute"></ion-icon>\n    <ion-icon color= "grey" range-right name="md-volume-up"></ion-icon>\n  </ion-range>\n   </ion-item>\n\n   <br/><ion-buttons large>\n     <button color ="good" ion-button (click)="vibrate()" block>Vibrate Test</button>\n   </ion-buttons>\n\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/about/about.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__["a" /* Geolocation */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
-], AboutPage);
-
-//# sourceMappingURL=about.js.map
-
-/***/ }),
-
-/***/ 232:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var ContactPage = (function () {
-    function ContactPage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    return ContactPage;
-}());
-ContactPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-contact',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-left></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/contact/contact.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
-], ContactPage);
-
-//# sourceMappingURL=contact.js.map
-
-/***/ }),
-
-/***/ 233:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_native__ = __webpack_require__(127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_vibration__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_vibration__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_geolocation__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__set_alarm_set_alarm__ = __webpack_require__(388);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__set_alarm_set_alarm__ = __webpack_require__(385);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__about_about__ = __webpack_require__(388);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -172,21 +54,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 //import { NativeGeocoder, NativeGeocoderReverseResult, NativeGeocoderForwardResult } from '@ionic-native/native-geocoder';
 
-var HomePage = (function () {
+
+var HomePage = HomePage_1 = (function () {
     function HomePage(geolocation, vibration, navCtrl, platform) {
         var _this = this;
         this.geolocation = geolocation;
         this.vibration = vibration;
         this.navCtrl = navCtrl;
         this.platform = platform;
+        this.rootPage = HomePage_1;
         platform.ready().then(function () {
             _this.loadMap();
         });
     }
     HomePage.prototype.setAlarm = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__set_alarm_set_alarm__["a" /* SetAlarmPage */], {
-            destination: this.destination
-        });
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__set_alarm_set_alarm__["a" /* SetAlarmPage */]);
+    };
+    HomePage.prototype.setting = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_6__about_about__["a" /* AboutPage */]);
     };
     HomePage.prototype.vibrate = function () {
         this.vibration.vibrate(3000);
@@ -243,18 +128,19 @@ var HomePage = (function () {
     };
     return HomePage;
 }());
-HomePage = __decorate([
+HomePage = HomePage_1 = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'pafe-home',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/home/home.html"*/'<ion-header>\n\n</ion-header>\n\n<ion-content style= "background-color: #4DC68F !important;">\n  <ion-searchbar (search)="setAlarm()" [(ngModel)] = "destination" placeholder="Set your destination" autocomplete= "on"></ion-searchbar>\n  <div id="map" style= "height: 87.5%"  ></div>\n</ion-content>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/home/home.html"*/
+        selector: 'pafe-home',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/home/home.html"*/'<ion-header>\n\n</ion-header>\n\n<ion-content style= "background-color: #4DC68F !important;">\n  <ion-searchbar (search)="setAlarm()" [(ngModel)] = "destination" id="search" placeholder="Set your destination" autocomplete= "on"></ion-searchbar>\n  <div id="map" style= "height: 100%"  ></div>\n  <button ion-button (click)="home()" id="click1"  color="good"><img src= "assets/images/search.png" style= "width: 30px; height: 30px;"> </button>\n\n  <button ion-button (click)="setting()" id="click2" color="good"><img src= "assets/images/setting.png" style= "width: 30px; height: 30px;"></button>\n</ion-content>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/home/home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__ionic_native_geolocation__["a" /* Geolocation */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_vibration__["a" /* Vibration */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]])
 ], HomePage);
 
+var HomePage_1;
 //# sourceMappingURL=home.js.map
 
 /***/ }),
 
-/***/ 388:
+/***/ 385:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -263,9 +149,9 @@ HomePage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_geolocation__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_native__ = __webpack_require__(127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_vibration__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_geocoder__ = __webpack_require__(389);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_background_geolocation__ = __webpack_require__(390);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_vibration__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_geocoder__ = __webpack_require__(386);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_background_geolocation__ = __webpack_require__(387);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -388,7 +274,7 @@ var SetAlarmPage = (function () {
 }());
 SetAlarmPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-set-alarm',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/set-alarm/set-alarm.html"*/'z<!--\n  Generated template for the SetAlarmPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar color ="good">\n    <ion-title>SetAlarm</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content style= "background-color: #f4f4f4 !important;" padding class="page">\n\n    <ion-card-header color="grey" style= "text-align: center">\n      <h6>Your destination is</h6>\n    <br/><b><h2>{{destination}}</h2></b>\n  </ion-card-header>\n\n\n  <br/><div class="bottom-container">\n     <ion-item>\n       <ion-range [(ngModel)]="radius" #radiusVal min="0" max="200" color="primary" pin="true" snaps="true" step="50">\n       </ion-range>\n     </ion-item>\n\n   <ion-label color="secondary" id="lbl">Set radius for alert <br/>in meters</ion-label>\n     <button ion-button large outline block (click)="reverseLocation()" id="cta" color="primary">Set Alarm</button>\n\n     <p *ngIf="error">{{ error }}</p>\n\n   </div>\n    <!-- <div class="loader"></div> -->\n\n\n\n\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/set-alarm/set-alarm.html"*/,
+        selector: 'page-set-alarm',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/set-alarm/set-alarm.html"*/'z<!--\n  Generated template for the SetAlarmPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar color ="good">\n    <ion-title>SetAlarm</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content style= "background-color: #f4f4f4 !important;" padding class="page">\n\n    <ion-card-header color="grey" style= "text-align: center">\n      <h6>Your destination is</h6>\n    <br/><b><h2>{{destination}}</h2></b>\n  </ion-card-header>\n\n\n  <br/><div class="bottom-container">\n     <ion-item>\n       <ion-range [(ngModel)]="radius" #radiusVal min="0" max="200" color="primary" pin="true" snaps="true" step="50">\n       </ion-range>\n     </ion-item>\n\n   <ion-label color="secondary" id="lbl">Set radius for alert <br/>in meters</ion-label>\n     <button ion-button large outline block (click)="reverseLocation()" id="cta" color="good">Set Alarm</button>\n\n     <p *ngIf="error">{{ error }}</p>\n\n   </div>\n    <!-- <div class="loader"></div> -->\n\n\n\n\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/set-alarm/set-alarm.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_6__ionic_native_background_geolocation__["a" /* BackgroundGeolocation */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_vibration__["a" /* Vibration */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_geolocation__["a" /* Geolocation */],
@@ -399,13 +285,57 @@ SetAlarmPage = __decorate([
 
 /***/ }),
 
-/***/ 391:
+/***/ 388:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__ = __webpack_require__(52);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var AboutPage = (function () {
+    function AboutPage(geolocation, vibration, navCtrl) {
+        this.geolocation = geolocation;
+        this.vibration = vibration;
+        this.navCtrl = navCtrl;
+    }
+    AboutPage.prototype.vibrate = function () {
+        this.vibration.vibrate(3000);
+    };
+    return AboutPage;
+}());
+AboutPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-about',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar color ="good">\n    <ion-title style= "text-align: center;">\n      Setting\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content style= "background-color: #f4f4f4 !important;" padding>\n\n    <ion-item color= "light">\n      <ion-label>Notifications</ion-label>\n      <ion-toggle color= "good" value="notif" checked="true"></ion-toggle>\n    </ion-item>\n\n    <br/><ion-item color= "light" large>\n      <ion-label>Vibration</ion-label>\n      <ion-toggle color= "good" value="vib" checked="true"></ion-toggle>\n    </ion-item>\n\n    <br/><ion-item color= "light">\n      <ion-label>Ringtone</ion-label>\n      <ion-toggle color= "good" value="vib" checked="true"></ion-toggle>\n    </ion-item>\n\n   <br/><ion-item color ="light">\n  <ion-range color= "good" [(ngModel)]="volume">\n    <ion-icon color= "grey" range-left name="md-volume-mute"></ion-icon>\n    <ion-icon color= "grey" range-right name="md-volume-up"></ion-icon>\n  </ion-range>\n   </ion-item>\n\n   <br/><ion-buttons large>\n     <button color ="good" ion-button (click)="vibrate()" block>Vibrate Test</button>\n   </ion-buttons>\n   <button ion-button (click)="home()" id="click1"  color="good" ><img src= "assets/images/search2.png" style= "width: 30px; height: 30px;"> </button>\n\n   <button ion-button (click)="setting()" id="click2" color="good"><img src= "assets/images/setting2.png" style= "width: 30px; height: 30px;"></button>\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/about/about.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__["a" /* Geolocation */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
+], AboutPage);
+
+//# sourceMappingURL=about.js.map
+
+/***/ }),
+
+/***/ 389:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(392);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(396);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(390);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(394);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -413,7 +343,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 396:
+/***/ 394:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -422,25 +352,23 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(439);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_about_about__ = __webpack_require__(231);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_contact_contact__ = __webpack_require__(232);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(233);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_tabs_tabs__ = __webpack_require__(230);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_set_alarm_set_alarm__ = __webpack_require__(388);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_active_active__ = __webpack_require__(708);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_vibration__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_status_bar__ = __webpack_require__(228);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_splash_screen__ = __webpack_require__(229);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_background_geolocation__ = __webpack_require__(390);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_native_geocoder__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(437);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_about_about__ = __webpack_require__(388);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_contact_contact__ = __webpack_require__(706);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(230);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_set_alarm_set_alarm__ = __webpack_require__(385);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_active_active__ = __webpack_require__(707);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_vibration__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_status_bar__ = __webpack_require__(228);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_splash_screen__ = __webpack_require__(229);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_background_geolocation__ = __webpack_require__(387);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_native_geocoder__ = __webpack_require__(386);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
 
 
 
@@ -468,9 +396,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_5__pages_about_about__["a" /* AboutPage */],
             __WEBPACK_IMPORTED_MODULE_6__pages_contact_contact__["a" /* ContactPage */],
             __WEBPACK_IMPORTED_MODULE_7__pages_home_home__["a" /* HomePage */],
-            __WEBPACK_IMPORTED_MODULE_8__pages_tabs_tabs__["a" /* TabsPage */],
-            __WEBPACK_IMPORTED_MODULE_9__pages_set_alarm_set_alarm__["a" /* SetAlarmPage */],
-            __WEBPACK_IMPORTED_MODULE_10__pages_active_active__["a" /* ActivePage */]
+            __WEBPACK_IMPORTED_MODULE_8__pages_set_alarm_set_alarm__["a" /* SetAlarmPage */],
+            __WEBPACK_IMPORTED_MODULE_9__pages_active_active__["a" /* ActivePage */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
@@ -482,17 +409,16 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_5__pages_about_about__["a" /* AboutPage */],
             __WEBPACK_IMPORTED_MODULE_6__pages_contact_contact__["a" /* ContactPage */],
             __WEBPACK_IMPORTED_MODULE_7__pages_home_home__["a" /* HomePage */],
-            __WEBPACK_IMPORTED_MODULE_8__pages_tabs_tabs__["a" /* TabsPage */],
-            __WEBPACK_IMPORTED_MODULE_9__pages_set_alarm_set_alarm__["a" /* SetAlarmPage */],
-            __WEBPACK_IMPORTED_MODULE_10__pages_active_active__["a" /* ActivePage */]
+            __WEBPACK_IMPORTED_MODULE_8__pages_set_alarm_set_alarm__["a" /* SetAlarmPage */],
+            __WEBPACK_IMPORTED_MODULE_9__pages_active_active__["a" /* ActivePage */]
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_12__ionic_native_status_bar__["a" /* StatusBar */],
-            __WEBPACK_IMPORTED_MODULE_13__ionic_native_splash_screen__["a" /* SplashScreen */],
-            __WEBPACK_IMPORTED_MODULE_11__ionic_native_vibration__["a" /* Vibration */],
-            __WEBPACK_IMPORTED_MODULE_14__ionic_native_background_geolocation__["a" /* BackgroundGeolocation */],
+            __WEBPACK_IMPORTED_MODULE_11__ionic_native_status_bar__["a" /* StatusBar */],
+            __WEBPACK_IMPORTED_MODULE_12__ionic_native_splash_screen__["a" /* SplashScreen */],
+            __WEBPACK_IMPORTED_MODULE_10__ionic_native_vibration__["a" /* Vibration */],
+            __WEBPACK_IMPORTED_MODULE_13__ionic_native_background_geolocation__["a" /* BackgroundGeolocation */],
             __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__["a" /* Geolocation */],
-            __WEBPACK_IMPORTED_MODULE_15__ionic_native_native_geocoder__["a" /* NativeGeocoder */],
+            __WEBPACK_IMPORTED_MODULE_14__ionic_native_native_geocoder__["a" /* NativeGeocoder */],
             { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] }
         ]
     })
@@ -502,7 +428,7 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 439:
+/***/ 437:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -512,7 +438,7 @@ AppModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(228);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(229);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_geolocation__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__ = __webpack_require__(230);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(230);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -531,7 +457,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var MyApp = (function () {
     function MyApp(platform, statusBar, splashScreen, geolocation) {
         this.geolocation = geolocation;
-        this.rootPage = __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__["a" /* TabsPage */];
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_5__pages_home_home__["a" /* HomePage */];
         platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
@@ -551,7 +477,42 @@ MyApp = __decorate([
 
 /***/ }),
 
-/***/ 708:
+/***/ 706:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ContactPage = (function () {
+    function ContactPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    return ContactPage;
+}());
+ContactPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-contact',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-left></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/contact/contact.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
+], ContactPage);
+
+//# sourceMappingURL=contact.js.map
+
+/***/ }),
+
+/***/ 707:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -596,5 +557,5 @@ ActivePage = __decorate([
 
 /***/ })
 
-},[391]);
+},[389]);
 //# sourceMappingURL=main.js.map

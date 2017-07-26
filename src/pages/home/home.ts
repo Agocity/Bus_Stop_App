@@ -6,6 +6,8 @@ import { Geolocation } from '@ionic-native/geolocation';
 //import { NativeGeocoder, NativeGeocoderReverseResult, NativeGeocoderForwardResult } from '@ionic-native/native-geocoder';
 
 import { SetAlarmPage } from '../set-alarm/set-alarm';
+import { AboutPage } from '../about/about';
+
 
 
 
@@ -17,6 +19,7 @@ export class HomePage {
 
     map: GoogleMap;
     destination: any;
+    public rootPage: any = HomePage;
 
     constructor(private geolocation: Geolocation, private vibration: Vibration, public navCtrl: NavController, public platform: Platform) {
 
@@ -25,12 +28,15 @@ export class HomePage {
         });
     }
 
+
     setAlarm() {
-        this.navCtrl.push(SetAlarmPage,{
-          destination: this.destination
-        })
+        this.navCtrl.push(SetAlarmPage)
 
       }
+      setting() {
+          this.navCtrl.push(AboutPage)
+
+        }
 
       vibrate() {
     this.vibration.vibrate(3000)
@@ -81,7 +87,7 @@ export class HomePage {
     console.log('Error getting location', error);
     });
 
-    
+
 
 
 

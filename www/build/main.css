@@ -20629,7 +20629,7 @@ ion-searchbar {
 
 .searchbar-md .searchbar-input {
   padding: 6px 55px;
-  border-radius: 24px;
+  border-radius: 10px;
   background-position: left 8px center;
   height: auto;
   font-size: 1.6rem;
@@ -35964,8 +35964,41 @@ ion-navbar.toolbar {
   color: #fff;
 }
 
+#click1 {
+  position: absolute;
+  top: 90%;
+  left: 2%;
+}
+
+#search {
+  top: .2%;
+}
+
+#click2 {
+  position: absolute;
+  top: 90%;
+  right: 2%;
+}
+
 ion-app._gmaps_cdv_ .nav-decor {
   background-color: transparent !important;
+}
+
+#click1 {
+  position: absolute;
+  top: 90%;
+  left: 2%;
+}
+
+#search {
+  position: absolute;
+  top: .2%;
+}
+
+#click2 {
+  position: absolute;
+  top: 90%;
+  right: 2%;
 }
 
 ion-range, ion-item {

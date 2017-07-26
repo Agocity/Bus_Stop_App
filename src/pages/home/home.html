@@ -3,6 +3,9 @@
 </ion-header>
 
 <ion-content style= "background-color: #4DC68F !important;">
-  <ion-searchbar (search)="setAlarm()" [(ngModel)] = "destination" placeholder="Set your destination" autocomplete= "on"></ion-searchbar>
-  <div id="map" style= "height: 87.5%"  ></div>
+  <ion-searchbar (search)="setAlarm()" [(ngModel)] = "destination" id="search" placeholder="Set your destination" autocomplete= "on"></ion-searchbar>
+  <div id="map" style= "height: 100%"  ></div>
+  <button ion-button (click)="home()" id="click1"  color="good"><img src= "assets/images/search.png" style= "width: 30px; height: 30px;"> </button>
+
+  <button ion-button (click)="setting()" id="click2" color="good"><img src= "assets/images/setting.png" style= "width: 30px; height: 30px;"></button>
 </ion-content>

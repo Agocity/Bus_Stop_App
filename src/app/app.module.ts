@@ -9,7 +9,6 @@ import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
 import { SetAlarmPage } from '../pages/set-alarm/set-alarm';
 import { ActivePage } from '../pages/active/active';
 
@@ -26,7 +25,6 @@ import { NativeGeocoder, NativeGeocoderReverseResult, NativeGeocoderForwardResul
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage,
     SetAlarmPage,
     ActivePage
   ],
@@ -40,7 +38,6 @@ import { NativeGeocoder, NativeGeocoderReverseResult, NativeGeocoderForwardResul
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage,
     SetAlarmPage,
     ActivePage
   ],
