@@ -21,7 +21,7 @@ export class HomePage {
     destination: any;
     public rootPage: any = HomePage;
 
-    constructor(public geolocation: Geolocation, private vibration: Vibration, public navCtrl: NavController,
+    constructor(private geolocation: Geolocation, private vibration: Vibration, public navCtrl: NavController,
       public platform: Platform, private nativeGeocoder: NativeGeocoder) {
 
         platform.ready().then(() => {
@@ -51,7 +51,11 @@ export class HomePage {
 
     loadMap(){
 
-        let location = this.geolocation.getCurrentPosition()
+        let location = new GoogleMapsLatLng(-34.9290,138.6010);
+        //     this.geolocation.getCurrentPosition().then((position) => {    //      console.log()
+        //   // location = new GoogleMapsLatLng(position.coords.latitude, position.coords.longitude)
+        //   console.log(position.coords.latitude)
+        // }).catch((error: any) => console.log(error));
 
         this.map = new GoogleMap('map', {
           'backgroundColor': '#4DC68F',

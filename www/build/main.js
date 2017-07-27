@@ -59,7 +59,11 @@ var HomePage = HomePage_1 = (function () {
         this.vibration.vibrate(3000);
     };
     HomePage.prototype.loadMap = function () {
-        var location = this.geolocation.getCurrentPosition();
+        var location = new __WEBPACK_IMPORTED_MODULE_2_ionic_native__["d" /* GoogleMapsLatLng */](-34.9290, 138.6010);
+        //     this.geolocation.getCurrentPosition().then((position) => {    //      console.log()
+        //   // location = new GoogleMapsLatLng(position.coords.latitude, position.coords.longitude)
+        //   console.log(position.coords.latitude)
+        // }).catch((error: any) => console.log(error));
         this.map = new __WEBPACK_IMPORTED_MODULE_2_ionic_native__["b" /* GoogleMap */]('map', {
             'backgroundColor': '#4DC68F',
             'controls': {
@@ -113,10 +117,11 @@ HomePage = HomePage_1 = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'pafe-home',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/home/home.html"*/'<ion-header>\n\n</ion-header>\n\n<ion-content style= "background-color: #4DC68F !important;">\n  <div id="map" style= "height: 100%; ">\n  <ion-searchbar (search)="setAlarm()" [(ngModel)] = "destination" placeholder="Set your destination" autocomplete= "on"></ion-searchbar><button ion-button (click)="home()" id="click1"  color="good"><img src= "assets/images/search.png" style= "width: 30px; height: 30px;"> </button>\n\n  <button ion-button (click)="setting()" id="click2" color="good"><img src= "assets/images/setting.png" style= "width: 30px; height: 30px;"></button></div>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/home/home.html"*/
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_native_geolocation__["a" /* Geolocation */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_native_geolocation__["a" /* Geolocation */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_vibration__["a" /* Vibration */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_vibration__["a" /* Vibration */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_geocoder__["a" /* NativeGeocoder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_geocoder__["a" /* NativeGeocoder */]) === "function" && _e || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__ionic_native_geolocation__["a" /* Geolocation */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_vibration__["a" /* Vibration */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_native_geocoder__["a" /* NativeGeocoder */]])
 ], HomePage);
 
-var HomePage_1, _a, _b, _c, _d, _e;
+var HomePage_1;
 //# sourceMappingURL=home.js.map
 
 /***/ }),
@@ -330,7 +335,7 @@ var AboutPage = (function () {
 }());
 AboutPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-about',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar hideBackButton color ="good">\n    <ion-title style= "text-align: center;">\n     Setting\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content style= "background-color: #f4f4f4 !important;" padding>\n\n    <ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;  padding: 0px 0px 20px 0px;" large>\n      <ion-label color= "grey" style= "font-size: 26px;"><b>Notifications</b></ion-label>\n    </ion-item>\n\n    <ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;  padding: 20px 0px 20px 0px;" large>\n      <ion-label color= "grey" style= "font-size: 26px;"><b>Vibration</b><br/></ion-label>\n      <img src= "assets/images/group.png" style= "width: 80px;" id="button2">\n\n    </ion-item>\n    \n\n\n   <!-- <br/><ion-buttons large>\n     <button color ="good" ion-button (click)="vibrate()" block>Vibrate Test</button>\n   </ion-buttons> -->\n   <button ion-button (click)="home()" id="click1"  color="good" ><img src= "assets/images/search2.png" style= "width: 30px; height: 30px;"> </button>\n\n   <button ion-button id="click2" color="good"><img src= "assets/images/setting2.png" style= "width: 30px; height: 30px;"></button>\n   <img src= "assets/images/group.png" style= "width: 80px;" id="button1">\n\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/about/about.html"*/
+        selector: 'page-about',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar hideBackButton color ="good">\n    <ion-title style= "text-align: center;">\n     Setting\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content style= "background-color: #f4f4f4 !important;" padding>\n\n    <ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;  padding: 0px 0px 20px 0px;" large>\n      <ion-label color= "grey" style= "font-size: 26px;"><b>Notifications</b></ion-label>\n    </ion-item>\n\n    <ion-item color= "light" style= "border-style: solid; border-width: 0px 0px 1px 0px; border-color: #4DC68F;  padding: 20px 0px 20px 0px;" large>\n      <ion-label color= "grey" style= "font-size: 26px;"><b>Vibration</b><br/></ion-label>\n      <img src= "assets/images/group.png" style= "width: 80px;" id="button2">\n\n    </ion-item>\n\n\n\n   <!-- <br/><ion-buttons large>\n     <button color ="good" ion-button (click)="vibrate()" block>Vibrate Test</button>\n   </ion-buttons> -->\n   <button ion-button (click)="home()" id="click1"  color="good" ><img src= "assets/images/search2.png" style= "width: 30px; height: 30px;"> </button>\n\n   <button ion-button id="click2" color="good"><img src= "assets/images/setting2.png" style= "width: 30px; height: 30px;"></button>\n   <img src= "assets/images/group.png" style= "width: 80px;" id="button1">\n    <img src= "assets/images/group.png" style= "width: 80px;" id="button2">\n\n\n\n</ion-content>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/about/about.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__["a" /* Geolocation */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_vibration__["a" /* Vibration */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
 ], AboutPage);
