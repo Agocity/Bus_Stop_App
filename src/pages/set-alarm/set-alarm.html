@@ -1,4 +1,4 @@
-z<!--
+<!--
   Generated template for the SetAlarmPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
@@ -12,30 +12,33 @@ z<!--
 
 
 <ion-content style= "background-color: #f4f4f4 !important;" padding class="page">
+  <!-- <img src= "assets/images/Tab.png" style= "width: 80px;" id="button"> -->
 
     <ion-card-header color="grey" style= "text-align: center">
-      <h6>Your destination is</h6>
-    <br/><b><h2>{{destination}}</h2></b>
+      <h4>Your destination is</h4>
+    <br/><b>{{destination}}</b>
+    <br/><br/><br/><br/><h5>Alert</h5>
+
   </ion-card-header>
 
+  <ion-list color="grey" id="select" style="padding: 0px 20px 0px 0px;">
+    <ion-item style= "background-color: transparent;">
+      <ion-select color= "light"[(ngModel)]="gaming">
+        <ion-option value="nes">100 m</ion-option>
+        <ion-option value="n64">200 m</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
 
-  <br/><div class="bottom-container">
+  <!-- <br/><br/><div class="bottom-container">
      <ion-item>
        <ion-range [(ngModel)]="radius" #radiusVal min="0" max="200" color="primary" pin="true" snaps="true" step="50">
        </ion-range>
-     </ion-item>
+     </ion-item> -->
 
-   <ion-label color="secondary" id="lbl">Set radius for alert <br/>in meters</ion-label>
-     <button ion-button large outline block (click)="reverseLocation()" id="cta" color="good">Set Alarm</button>
+   <br/><ion-label color="grey" style= "text-align: center"><h5>Before arrival</h5></ion-label>
+     <button ion-button large (click)="reverseLocation()" id="button2" color="good">Set</button>
 
      <p *ngIf="error">{{ error }}</p>
-
-   </div>
-    <!-- <div class="loader"></div> -->
-
-
-
-
-
 
 </ion-content>

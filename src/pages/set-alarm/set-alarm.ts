@@ -24,7 +24,6 @@ import { BackgroundGeolocation, BackgroundGeolocationConfig } from '@ionic-nativ
    templateUrl: 'set-alarm.html',
  })
  export class SetAlarmPage {
-
    radius: number = 100;
    error: any;
    success:any;
@@ -32,11 +31,14 @@ import { BackgroundGeolocation, BackgroundGeolocationConfig } from '@ionic-nativ
    miles: any;
    coord1: any;
 
+
    constructor(private backgroundGeolocation: BackgroundGeolocation, private vibration: Vibration, private alertCtrl: AlertController, public alerCtrl: AlertController,
      public navCtrl: NavController, public navParams: NavParams, private platform: Platform, private geolocation: Geolocation,
      private nativeGeocoder: NativeGeocoder) {
      this.destination = navParams.get('destination')
     this.miles = "One Mile"
+
+console.log(this.destination)
 
 
      this.platform.ready().then(() => {
@@ -59,6 +61,8 @@ reverseLocation(){
 
 
 }
+
+
   setGeofence(value: number, coordinates) {
     console.log("hi")
     let location = coordinates

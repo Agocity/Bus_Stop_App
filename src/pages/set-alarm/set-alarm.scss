@@ -9,12 +9,6 @@ ion-range, ion-item {
     border-bottom:0 !important;
 }
 
-h1 {
-    padding: 5em 0;
-    text-align:center;
-    font-weight: 100;
-
-}
 
 .bottom-container {
     display:block;
@@ -25,6 +19,25 @@ h1 {
 #cta {
     margin: 2em auto 0 auto;
     display:block;
+}
+
+// #select {
+//   position: absolute;
+//   top: 41.6%;
+//   right: 45%
+//
+// }
+
+#button {
+  position: absolute;
+  top: 41.6%;
+  right: 45%
+
+}
+#button2 {
+  position: absolute;
+  top: 70%;
+  right: 37.5%
 }
 
 #lbl {
@@ -47,7 +60,7 @@ h1 {
 
   .loader {
     position: absolute;
-    top: 36%;
+    top: 33%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-style: solid;

@@ -3,6 +3,8 @@ import { NavController } from 'ionic-angular';
 import { Vibration } from '@ionic-native/vibration';
 import { Geolocation } from '@ionic-native/geolocation';
 
+import { HomePage } from '../home/home';
+
 
 
 @Component({
@@ -14,6 +16,10 @@ export class AboutPage {
   constructor(private geolocation: Geolocation, private vibration: Vibration, public navCtrl: NavController) {
 
   }
+  home() {
+      this.navCtrl.pop(HomePage)
+
+    }
 
   vibrate() {
     this.vibration.vibrate(3000)
