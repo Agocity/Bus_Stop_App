@@ -3,7 +3,7 @@ import { NavController, Platform } from 'ionic-angular';
 import { GoogleMap, GoogleMapsEvent, GoogleMapsLatLng } from 'ionic-native';
 import { Vibration } from '@ionic-native/vibration';
 import { Geolocation } from '@ionic-native/geolocation';
-//import { NativeGeocoder, NativeGeocoderReverseResult, NativeGeocoderForwardResult } from '@ionic-native/native-geocoder';
+import { NativeGeocoder, NativeGeocoderReverseResult, NativeGeocoderForwardResult } from '@ionic-native/native-geocoder';
 
 import { SetAlarmPage } from '../set-alarm/set-alarm';
 import { AboutPage } from '../about/about';
@@ -21,7 +21,8 @@ export class HomePage {
     destination: any;
     public rootPage: any = HomePage;
 
-    constructor(private geolocation: Geolocation, private vibration: Vibration, public navCtrl: NavController, public platform: Platform) {
+    constructor(public geolocation: Geolocation, private vibration: Vibration, public navCtrl: NavController,
+      public platform: Platform, private nativeGeocoder: NativeGeocoder) {
 
         platform.ready().then(() => {
             this.loadMap();
@@ -30,11 +31,15 @@ export class HomePage {
 
 
     setAlarm() {
-      this.navCtrl.push(SetAlarmPage,{
-          destination: this.destination
+      this.nativeGeocoder.forwardGeocode(this.destination)
+        .then((coordinates: NativeGeocoderForwardResult) => this.navCtrl.push(SetAlarmPage))
+        .catch((error: any) => console.log());
+      // this.navCtrl.push(SetAlarmPage,{
+      //     destination: this.destination
+      //   })
 
-})
       }
+
       setting() {
           this.navCtrl.push(AboutPage)
 
@@ -46,7 +51,7 @@ export class HomePage {
 
     loadMap(){
 
-        let location = new GoogleMapsLatLng(-34.9290,138.6010);
+        let location = this.geolocation.getCurrentPosition()
 
         this.map = new GoogleMap('map', {
           'backgroundColor': '#4DC68F',

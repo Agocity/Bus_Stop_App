@@ -36,9 +36,7 @@ import { BackgroundGeolocation, BackgroundGeolocationConfig } from '@ionic-nativ
      public navCtrl: NavController, public navParams: NavParams, private platform: Platform, private geolocation: Geolocation,
      private nativeGeocoder: NativeGeocoder) {
      this.destination = navParams.get('destination')
-    this.miles = "One Mile"
 
-console.log(this.destination)
 
 
      this.platform.ready().then(() => {
@@ -67,6 +65,7 @@ reverseLocation(){
     console.log("hi")
     let location = coordinates
     console.log(location.longitude)
+    console.log(location.latitude)
 
 
 
