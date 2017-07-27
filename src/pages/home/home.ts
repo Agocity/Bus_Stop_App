@@ -30,8 +30,10 @@ export class HomePage {
 
 
     setAlarm() {
-        this.navCtrl.push(SetAlarmPage)
+      this.navCtrl.push(SetAlarmPage,{
+          destination: this.destination
 
+})
       }
       setting() {
           this.navCtrl.push(AboutPage)

@@ -110,10 +110,6 @@ reverseLocation(){
       this.error = error;
     });
 
-
-     this.destination = this.navParams.get('destination')
-     this.miles = "One Mile"
-
    }
    doAlert() {
   let alert = this.alerCtrl.create({

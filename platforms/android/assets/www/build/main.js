@@ -42,7 +42,9 @@ var HomePage = HomePage_1 = (function () {
         });
     }
     HomePage.prototype.setAlarm = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__set_alarm_set_alarm__["a" /* SetAlarmPage */]);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__set_alarm_set_alarm__["a" /* SetAlarmPage */], {
+            destination: this.destination
+        });
     };
     HomePage.prototype.setting = function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_6__about_about__["a" /* AboutPage */]);
@@ -234,8 +236,6 @@ var SetAlarmPage = (function () {
         }).catch(function (error) {
             _this.error = error;
         });
-        this.destination = this.navParams.get('destination');
-        this.miles = "One Mile";
     };
     SetAlarmPage.prototype.doAlert = function () {
         var alert = this.alerCtrl.create({
@@ -274,7 +274,7 @@ var SetAlarmPage = (function () {
 }());
 SetAlarmPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-set-alarm',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/set-alarm/set-alarm.html"*/'<!--\n  Generated template for the SetAlarmPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar color ="good">\n    <ion-title>SetAlarm</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content style= "background-color: #f4f4f4 !important;" padding class="page">\n  <img src= "assets/images/Tab.png" style= "width: 80px;" id="button">\n\n    <ion-card-header color="grey" style= "text-align: center">\n      <h4>Your destination is</h4>\n    <br/><b>{{destination}}</b>\n    <br/><br/><br/><br/><h5>Alert</h5>\n\n  </ion-card-header>\n\n  <ion-list color="grey" style="padding: 0px 105px 0px 0px;">\n    <ion-item style= "background-color: transparent;">\n      <ion-select color= "light"[(ngModel)]="gaming">\n        <ion-option value="nes">100 m</ion-option>\n        <ion-option value="n64">200 m</ion-option>\n      </ion-select>\n    </ion-item>\n  </ion-list>\n\n  <!-- <br/><br/><div class="bottom-container">\n     <ion-item>\n       <ion-range [(ngModel)]="radius" #radiusVal min="0" max="200" color="primary" pin="true" snaps="true" step="50">\n       </ion-range>\n     </ion-item> -->\n\n   <br/><ion-label color="grey" style= "text-align: center"><h5>Before arrival</h5></ion-label>\n     <button ion-button large (click)="reverseLocation()" id="button2" color="good">Set</button>\n\n     <p *ngIf="error">{{ error }}</p>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/set-alarm/set-alarm.html"*/,
+        selector: 'page-set-alarm',template:/*ion-inline-start:"/Users/Gio/IonicProjects/Test2/src/pages/set-alarm/set-alarm.html"*/'<!--\n  Generated template for the SetAlarmPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar color ="good">\n    <ion-title>SetAlarm</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content style= "background-color: #f4f4f4 !important;" padding class="page">\n  <!-- <img src= "assets/images/Tab.png" style= "width: 80px;" id="button"> -->\n\n    <ion-card-header color="grey" style= "text-align: center">\n      <h4>Your destination is</h4>\n    <br/><b><h1>{{destination}}</h1></b>\n    <br/><br/><br/><br/><h5>Alert</h5>\n\n  </ion-card-header>\n\n  <ion-list color="grey" id="select" style="padding: 0px 20px 0px 0px;">\n    <ion-item style= "background-color: transparent;">\n      <ion-select color= "light"[(ngModel)]="gaming">\n        <ion-option value="nes">1 mile</ion-option>\n        <ion-option value="n64">2 miles</ion-option>\n      </ion-select>\n    </ion-item>\n  </ion-list>\n\n  <!-- <br/><br/><div class="bottom-container">\n     <ion-item>\n       <ion-range [(ngModel)]="radius" #radiusVal min="0" max="200" color="primary" pin="true" snaps="true" step="50">\n       </ion-range>\n     </ion-item> -->\n\n   <br/><ion-label color="grey" style= "text-align: center"><h5>Before arrival</h5></ion-label>\n     <button ion-button large (click)="reverseLocation()" id="button2" color="good">Set</button>\n\n     <p *ngIf="error">{{ error }}</p>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Gio/IonicProjects/Test2/src/pages/set-alarm/set-alarm.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_6__ionic_native_background_geolocation__["a" /* BackgroundGeolocation */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_vibration__["a" /* Vibration */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_geolocation__["a" /* Geolocation */],
