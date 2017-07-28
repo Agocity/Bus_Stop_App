@@ -51,7 +51,7 @@
     <name>MyApp</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content original-src="index.html" src="http://10.120.18.248:8101" />
+    <content original-src="index.html" src="http://10.120.18.248:8100" />
     <access origin="*" />
     <allow-navigation href="http://ionic.local/*" />
     <allow-navigation href="http://10.0.1.253:8101" />
@@ -59,6 +59,7 @@
     <allow-navigation href="http://10.120.18.248:8100" />
     <allow-navigation href="http://172.27.0.64:8100" />
     <allow-navigation href="http://10.120.18.248:8102" />
+    <allow-navigation href="http://172.27.0.64:8101" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />

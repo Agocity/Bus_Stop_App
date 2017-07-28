@@ -21515,7 +21515,7 @@ ion-select {
 }
 
 .select-md .select-placeholder {
-  color: #999;
+  color: #4DC68F;
 }
 
 .select-md .item-select ion-label {
@@ -36018,6 +36018,18 @@ ion-range, ion-item {
   color: #fff;
 }
 
+#click1 {
+  position: absolute;
+  top: 90%;
+  left: 2%;
+}
+
+#click2 {
+  position: absolute;
+  top: 90%;
+  right: 2%;
+}
+
 .item-inner {
   border-bottom: 0 !important;
 }
@@ -36037,12 +36049,6 @@ ion-range, ion-item {
   position: absolute;
   top: 41.6%;
   right: 45%;
-}
-
-#button2 {
-  position: absolute;
-  top: 70%;
-  right: 39.5%;
 }
 
 #lbl {

@@ -8,6 +8,9 @@ import { ActivePage } from '../active/active';
 import { NativeGeocoder, NativeGeocoderReverseResult, NativeGeocoderForwardResult } from '@ionic-native/native-geocoder';
 // import { LocationTracker } from '../../providers/location-tracker/location-tracker';
 import { BackgroundGeolocation, BackgroundGeolocationConfig } from '@ionic-native/background-geolocation';
+import { HomePage } from '../home/home';
+import { AboutPage } from '../about/about';
+
 
 
 
@@ -36,7 +39,7 @@ import { BackgroundGeolocation, BackgroundGeolocationConfig } from '@ionic-nativ
      public navCtrl: NavController, public navParams: NavParams, private platform: Platform, private geolocation: Geolocation,
      private nativeGeocoder: NativeGeocoder) {
      this.destination = navParams.get('destination')
-
+     console.log(this.destination)
 
 
      this.platform.ready().then(() => {
@@ -60,6 +63,14 @@ reverseLocation(){
 
 }
 
+home() {
+    this.navCtrl.pop(HomePage)
+
+  }
+  setting() {
+      this.navCtrl.push(AboutPage)
+
+    }
 
   setGeofence(value: number, coordinates) {
     console.log("hi")

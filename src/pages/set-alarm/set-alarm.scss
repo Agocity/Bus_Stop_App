@@ -5,6 +5,18 @@ ion-range, ion-item {
 
 }
 
+#click1 {
+    position: absolute;
+    top: 90%;
+    left: 2%;
+  }
+
+  #click2 {
+      position: absolute;
+      top: 90%;
+      right: 2%;
+    }
+
 .item-inner {
     border-bottom:0 !important;
 }
@@ -34,11 +46,7 @@ ion-range, ion-item {
   right: 45%
 
 }
-#button2 {
-  position: absolute;
-  top: 70%;
-  right: 39.5%
-}
+
 
 #lbl {
     text-transform:uppercase;

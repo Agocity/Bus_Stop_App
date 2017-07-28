@@ -32,8 +32,10 @@ export class HomePage {
 
     setAlarm() {
       this.nativeGeocoder.forwardGeocode(this.destination)
-        .then((coordinates: NativeGeocoderForwardResult) => this.navCtrl.push(SetAlarmPage))
+        .then((coordinates: NativeGeocoderForwardResult) => this.navCtrl.push(SetAlarmPage,{
+          destination: this.destination}))
         .catch((error: any) => console.log());
+
       // this.navCtrl.push(SetAlarmPage,{
       //     destination: this.destination
       //   })

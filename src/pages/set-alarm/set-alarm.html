@@ -14,21 +14,23 @@
 <ion-content style= "background-color: #f4f4f4 !important;" padding class="page">
   <!-- <img src= "assets/images/Tab.png" style= "width: 80px;" id="button"> -->
 
-    <ion-card-header color="grey" style= "text-align: center">
-      <h4>Your destination is</h4>
+  <br/><br/><ion-card-header color="grey" style= "text-align: center; font-weight: bold;">
+    <h1>Your destination is</h1>
     <br/><b><h1>{{destination}}</h1></b>
-    <br/><br/><br/><br/><h5>Alert</h5>
-
   </ion-card-header>
 
-  <ion-list color="grey" id="select" style="padding: 0px 20px 0px 0px;">
-    <ion-item style= "background-color: transparent;">
-      <ion-select color= "light"[(ngModel)]="gaming">
-        <ion-option value="nes">1 mile</ion-option>
-        <ion-option value="n64">2 miles</ion-option>
-      </ion-select>
-    </ion-item>
-  </ion-list>
+<br/><br/><br/><br/><ion-item>
+    <ion-label style= "font-size: 25px; font-weight: bold;">Set Alarm</ion-label>
+    <ion-select [(ngModel)]="gender" style= "background-color: #4DC68F !important">
+      <ion-option value="f">    One Mile     </ion-option>
+      <ion-option value="m">    Two Miles    </ion-option>
+    </ion-select>
+  </ion-item>
+
+  <br/><br/><ion-card-header color="grey" style= "text-align: center; font-weight: bold;">
+    <h1>from destination</h1>
+  </ion-card-header>
+
 
   <!-- <br/><br/><div class="bottom-container">
      <ion-item>
@@ -36,9 +38,11 @@
        </ion-range>
      </ion-item> -->
 
-   <br/><ion-label color="grey" style= "text-align: center"><h5>Before arrival</h5></ion-label>
-     <button ion-button large (click)="reverseLocation()" id="button2" color="good">Set</button>
+     <br/><br/><button ion-button large (click)="reverseLocation()" color="good" style= "width: 30%; align: center;">Set</button>
+     <button ion-button (click)="home()" id="click1"  color="good"><img src= "assets/images/search2.png" style= "width: 30px; height: 30px;"> </button>
 
-     <p *ngIf="error">{{ error }}</p>
+     <button ion-button  (click)="setting()" id="click2" color="good"><img src= "assets/images/setting.png" style= "width: 30px; height: 30px;"></button>
+
+
 
 </ion-content>

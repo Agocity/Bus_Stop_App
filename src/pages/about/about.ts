@@ -17,7 +17,7 @@ export class AboutPage {
 
   }
   home() {
-      this.navCtrl.pop(HomePage)
+      this.navCtrl.popToRoot(HomePage)
 
     }
 
